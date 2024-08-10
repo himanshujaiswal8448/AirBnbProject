@@ -1,0 +1,48 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="row">
+  <div class="col-6 offset-3">
+    <br />
+    <h2><b> SignUp on Airbnb </b></h2>
+    <br />
+
+    <form method="POST" action="/signup" class="needs-validation" novalidate>
+      <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input
+          name="username"
+          placeholder="Enter  Username"
+          type="text"
+          class="form-control"
+          required
+        />
+        <div class="invalid-feedback">Username should be valid!</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input
+          name="email"
+          placeholder="Enter  Email"
+          type="email"
+          class="form-control"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input
+          name="password"
+          placeholder="Enter  Password"
+          type="password"
+          class="form-control"
+          required
+        />
+      </div>
+
+      <br />
+      <button class="btn btn-dark add-btn">SignUp</button>
+    </form>
+  </div>
+</div>
