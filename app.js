@@ -121,6 +121,10 @@ app.use("/listings/:id/reviews", reviewsRouter);
 
 // User Route
 
+app.get("/", (req, res) => {
+  res.redirect("/listings");
+});
+
 app.use("/", userRouter);
 
 /*
