@@ -38,7 +38,7 @@
     <li>&#8377; <%= listing.price.toLocaleString("en-IN") %></li>
     <li><%= listing.location %></li>
     <li><%= listing.country %></li>
-  </ul> -->
+</ul> -->
 
 <% if(currUser && listing.owner._id.equals(currUser._id)) {%>
 
@@ -84,7 +84,7 @@
     </div> -->
 
     <div class="mb-3 mt-3">
-      <label for="rating" class="form-label">Rating</label>
+      <label for="rating" class="form-label"> <b> Rating </b> </label>
       <fieldset class="starability-slot">
         <input
           type="radio"
@@ -108,7 +108,7 @@
       </fieldset>
     </div>
     <div>
-      <label for="comment" class="form-label">Comment</label>
+      <label for="comment" class="form-label"> <b> Comment </b> </label>
       <textarea
         name="review[comment]"
         id="comment"
@@ -118,10 +118,12 @@
       <div class="invalid-feedback">Please add some Comment for review</div>
     </div>
     <br />
-    <button class="btn btn-outline-dark">Submit</button>
+    <button class="btn btn-outline-dark"><b> Submit </b></button>
   </form>
 
   <% } %>
+  <br />
+
   <br />
 
   <% if(listing.reviews.length > 0 ) { %>
@@ -131,7 +133,9 @@
     <div class="card col-5 ms-3 mb-3">
       <br />
       <div class="card-body mb-2">
-        <h5 class="card-title">@<%= review.author.username %></h5>
+        <h5 class="card-title">
+          <span class="card-titl">@<%= review.author.username %></span>
+        </h5>
         <p
           class="starability-result card-text"
           data-rating="<%= review.rating %>"
@@ -143,7 +147,9 @@
         method="POST"
         action="/listings/<%= listing._id %>/reviews/<%= review._id %>?_method=DELETE"
       >
+        <% if(currUser && review.author.equals(currUser._id)) {%>
         <button class="btn btn-sm btn-dark">Delete</button>
+        <% } %>
       </form>
     </div>
 

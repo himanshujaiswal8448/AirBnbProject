@@ -1,15 +1,121 @@
 <footer>
   <div class="f-info">
-    <div class="f-info-socials">
-      <i class="fa-brands fa-square-facebook"></i>
-      <i class="fa-brands fa-square-instagram"></i>
-      <i class="fa-brands fa-linkedin"></i>
-    </div>
     <div class="f-info-brand"><b> &copy; Airbnb Private Limited. </b></div>
+
     <div class="f-info-links">
-      <a href="/privacy"> <b> • Privacy </b></a>
-      &nbsp; &nbsp;
-      <a href="/terms"> <b> • Terms </b> </a>
+      <div class="container">
+        <button
+          type="button"
+          class="btn footer-btn"
+          data-bs-toggle="modal"
+          data-bs-target="#privacyModal"
+        >
+          Privacy Policy
+        </button>
+        <button
+          type="button"
+          class="btn footer-btn"
+          data-bs-toggle="modal"
+          data-bs-target="#termsModal"
+        >
+          Terms of Service
+        </button>
+      </div>
+
+      <!-- Privacy Modal -->
+      <div
+        class="modal fade"
+        id="privacyModal"
+        tabindex="-1"
+        aria-labelledby="privacyModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="privacyModalLabel">Privacy Policy</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                This is the Privacy Policy. We are committed to protecting your
+                personal data and ensuring transparency in how we use it.
+              </p>
+              <ul>
+                <li>We collect personal data to improve our services.</li>
+                <li>Your data will not be shared without your consent.</li>
+                <li>You can request data deletion at any time.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Terms Modal -->
+      <div
+        class="modal fade"
+        id="termsModal"
+        tabindex="-1"
+        aria-labelledby="termsModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="termsModalLabel">Terms of Service</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                This is the Terms of Service. By using our website, you agree to
+                the following terms:
+              </p>
+              <ul>
+                <li>You are responsible for your account's security.</li>
+                <li>Do not misuse our services.</li>
+                <li>
+                  We reserve the right to suspend accounts that violate our
+                  terms.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="f-info-socials">
+      <a
+        href="https://www.linkedin.com/in/himanshujaiswal8448/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a
+        href="https://x.com/himanshuku9708"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/himanshuku9708/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-square-instagram"></i>
+      </a>
     </div>
   </div>
 </footer>

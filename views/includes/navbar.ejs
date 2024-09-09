@@ -1,24 +1,5 @@
-<style>
-  .search-btn {
-    background-color: #fe424d;
-    color: #fff;
-    padding: 0 1rem 0 1rem;
-    border-radius: 2rem;
-  }
-  .search-btn:hover {
-    background-color: #fe424d;
-    color: #fff;
-  }
-  .search-btn i {
-    display: inline;
-    margin-right: 0.5rem;
-  }
-  .search-input {
-    border-radius: 2rem;
-    padding: 0.5rem 3rem 0.5rem 3rem;
-  }
-</style>
-
+<script src="../JS/script.js"></script>
+<link rel="stylesheet" href="../CSS/style.css" />
 <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="/listings"
@@ -29,12 +10,13 @@
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbarNavAltMarkup"
+      id="menu-toggle"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link" href="/listings">Explore</a>
+        <a class="nav-link bor" href="/listings">Explore</a>
       </div>
 
       <div class="navbar-nav ms-auto">
@@ -51,13 +33,13 @@
       </div>
 
       <div class="navbar-nav ms-auto">
-        <a class="nav-link" href="/listings/new">Airbnb your home</a>
+        <a class="nav-link bor" href="/listings/new">Airbnb your home</a>
         <% if(!currUser) { %>
-        <a class="nav-link" href="/signup">Signup</a>
-        <a class="nav-link" href="/login">Login</a>
+        <a class="nav-link bor" href="/signup">Signup</a>
+        <a class="nav-link bor" href="/login">Login</a>
 
         <% } %> <% if(currUser) { %>
-        <a class="nav-link" href="/logout">Logout</a>
+        <a class="nav-link bor" href="/logout">Logout</a>
         <% } %>
       </div>
     </div>

@@ -20,3 +20,8 @@
     );
   });
 })();
+
+document.getElementById("menu-toggle").addEventListener("click", function () {
+  const navbarCollapse = document.getElementById("navbarNavAltMarkup");
+  navbarCollapse.classList.toggle("active");
+});
